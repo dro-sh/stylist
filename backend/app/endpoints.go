@@ -12,6 +12,7 @@ type Message struct {
 	Message string `json:"token"`
 }
 
+// Программные требования_20230301_1201#0-2-BB-00005
 // Login performs login to service by login and password
 func Login(w http.ResponseWriter, r *http.Request) {
 	login := r.URL.Query().Get("login")

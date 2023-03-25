@@ -13,8 +13,6 @@ COPY ["Makefile", "Makefile"]
 
 RUN make server-build OUTPUT="./bin/app"
 
-RUN ls .
-
 FROM scratch
 WORKDIR /app
 
